@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora JS</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Vinculação do arquivo CSS externo chamado "style.css" -->
+    <script src="js/calculadora.js"></script> <!-- Vinculação do arquivo JavaScript externo chamado "calculadora.js" -->
+  
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a> <!-- Link para a página "Home" -->
+            <a href="contato.html">Contato</a> <!-- Link para a página "Contato" -->
+            <a href="login.html">Login</a> <!-- Link para a página "Login" -->
+        </nav>
+    </header>
+    
+    <main class="container">
+        <section>
+            Informações do projeto
+        </section>
+
+        <section>
+            <form class="form" action=""> <!-- formulário com a classe "form" e atributo action vazio -->
+                Numero 1:<input type="number" id="num1" name="num1"
+                        required placeholder="Informe um numero qualquer"> <!-- Campo de entrada para o primeiro número -->
+                    
+                Numero 2:<input type="number" id="num2" name="num2"
+                        required placeholder="Informe um numero qualquer"><br> <!-- Campo de entrada para o segundo número -->
+                
+                <!-- botões para realizar operações matemáticas -->
+                <input type="button" id="btn1" value="somar" onclick="soma();">
+                <input type="button" id="btn2" value="subtrair" onclick="subtrai();">
+                <input type="button" id="btn3" value="multiplicar" onclick="multiplica();">
+                <input type="button" id="btn4" value="Dividir" onclick="divide();">
+                <input type="button" id="btn5" value="Potenciação" onclick="potenciacão();">
+                <input type="button" id="btn6" value="Raiz" onclick="raiz();">
+                <input type="button" id="btn7" value="Fatoração" onclick="fatoracao();">
+                <input type="button" id="btn8" value="Logaritmação" onclick="log();">
+        
+                <br>Resultado: <input type="text" id="resultado" name="resul"> <!-- exibição do resultado -->
+            </form>
+        </section>
+    </main>
+   
+</body>
+</html>

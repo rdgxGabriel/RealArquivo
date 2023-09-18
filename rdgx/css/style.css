@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(143, 70, 238);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+}
+
+header h1 {
+    color: white;
+    font-size: 24px;
+}
+
+nav {
+    background-color: rgb(143, 70, 238);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+
+nav > a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-left: 30px;
+    margin-right: 20px;
+    background-color: rgb(143, 70, 238);
+}
+
+nav > a:hover {
+    color: plum;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.945);
+    padding: 20px; /* Adicionado padding para criar um espaço em volta do conteúdo */
+    border: 2px solid rgb(0, 0, 0); /* Adicionado uma borda roxa ao redor do conteúdo */
+    border-radius: 10px; /* Adicionado bordas arredondadas ao contêiner */
+    width: 80%; /* Aumentado o tamanho do contêiner para preencher mais espaço */
+    margin-top: 60px; /* Espaço para o cabeçalho */
+}
+
+.form {
+    display: grid;
+    background-color: rgba(201, 126, 245, 0.945);
+    padding: 20px; /* Adicionado padding para espaço interno */
+    border: 3px solid rgb(143, 70, 238);
+    border-radius: 10px;
+    width: 100%; /* Aumentado o tamanho do formulário para preencher mais espaço */
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.form-input {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.btn-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-form > input {
+    background-color: rgb(143, 70, 238);
+    color: white;
+    margin-top: 20px;
+    width: 100%; /* Garante que os botões ocupem 100% da largura */
+}
